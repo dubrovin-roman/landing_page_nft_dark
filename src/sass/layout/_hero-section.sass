@@ -1,11 +1,19 @@
 .hero-section
     position: relative
     height: 100vh
+    display: flex
+    flex-direction: row
+    padding-top: 3.8rem
     //background-color: green
+    &__left
+    &__right
+        //width: 80rem
+        //height: 80rem
+        //background: green
     &__header
         position: absolute
-        top: 3.8rem
-        left: 0
+        top: 0rem
+        left: 0rem
         display: flex
         justify-content: space-between
         width: 100%
@@ -13,7 +21,7 @@
         width: 6.6rem
         height: 6.6rem
     &__blur-light-effect
-        position: relative
+        position: absolute
         width: 100%
         height: 100%
         &__ellipse
