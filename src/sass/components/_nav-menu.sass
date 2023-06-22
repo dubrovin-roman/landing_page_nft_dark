@@ -1,5 +1,31 @@
 .nav-menu
     display: flex
     &__list
+        display: flex
+        flex-direction: row
+        margin-right: 16.1rem
     &__list-item
+        margin-right: 6.4rem
+        font-family: "Work Sans"
+        font-size: 1.8rem
+        font-weight: 500
+        list-style: none
+        display: flex
+        align-items: center
+        &:last-child
+            margin-right: 0rem
+        a
+            text-decoration: none
+            color: #F5FBF2
+            &:hover
+                color: #FFCE4E
+                border-bottom: solid 0.3rem #FFCE4E
     &__btn
+        width: 19.5rem
+        height: 6.4rem
+        border: 0.1rem solid #FFCE4E
+        background: rgba(233, 215, 167, 0.10)
+        font-family: "Work Sans"
+        font-size: 1.8rem
+        font-weight: 600
+        color: #FFCE4E
