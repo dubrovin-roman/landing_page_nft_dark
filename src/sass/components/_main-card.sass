@@ -1,0 +1,98 @@
+.main-card
+    background: url(../img/main-card-background.png) center / cover no-repeat
+    width: 55.8rem
+    height: 71.8rem
+    position: relative
+    z-index: 100
+    &__bid
+        width: 51.2rem
+        height: 9.8rem
+        opacity: 0.95
+        background: linear-gradient(145deg, rgba(255, 137, 61, 0.09) 0%, rgba(250, 250, 250, 0.90) 100%)
+        box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.12)
+        backdrop-filter: blur(2.25rem)
+        position: absolute
+        top: 2.4rem
+        right: 2.4rem
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 0rem 5rem
+        z-index: 120
+    &__current-bid-title
+        font-family: "Oxanium"
+        font-size: 1.8rem
+        font-weight: 500
+        color: #E4DEE7
+        letter-spacing: 0.14rem
+        text-transform: capitalize
+        margin-bottom: 0.7rem
+    &__current-bid-price
+        font-family: "Oxanium"
+        font-size: 3.2rem
+        font-weight: 700
+        color: #FFF
+    &__end-time-title
+        font-family: "Oxanium"
+        font-size: 1.8rem
+        font-weight: 500
+        color: #E4DEE7
+        letter-spacing: 0.14rem
+        margin-bottom: 0.7rem
+    &__end-time-hours
+        font-family: "Oxanium"
+        font-size: 3.2rem
+        font-weight: 700
+        color: #FFF
+    &__about
+        position: absolute
+        bottom: 0
+        right: 0
+        width: 100%
+        height: 14.2rem
+        background: #FFF
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 0rem 4rem 0rem 6rem
+        z-index: 120
+    &__creator-box
+        display: flex
+        flex-direction: column
+    &__creator-title
+        font-family: "Oxanium"
+        font-size: 2.8rem
+        font-weight: 600
+        letter-spacing: 0.19rem
+        color: #16091B
+    &__creator-name
+        font-family: "Work Sans"
+        font-size: 2.4rem
+        line-height: 3.5rem
+        color: #594D5E
+    &__btn-start
+        font-family: "Work Sans"
+        font-size: 2.4rem
+        font-weight: 700
+        color: #000
+        padding: 2.3rem 4.4rem
+        background: $primary-color
+        border: none
+        backdrop-filter: blur(2.2rem)
+    &__candy
+        width: 20.9rem
+        height: 11.9rem
+        position: absolute
+        top: 8.5rem
+        right: 6.1rem
+        z-index: 110
+    &__worms-2
+        position: absolute
+        top: 27rem
+        right: 0
+        z-index: 110
+    &__worms-3
+        position: absolute
+        top: 40rem
+        left: 1rem
+        z-index: 110
