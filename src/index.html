@@ -13,9 +13,8 @@
 </head>
 
 <body>
-    <!-- <div class="blur-effect"></div> -->
-    <div class="container">
-        <header class="header">
+    <header class="header">
+        <div class="header__container container">
             <a href="#"><img class="header__logo" src="img/logo_nav.svg" alt=""></a>
             <nav class="header__nav nav-menu">
                 <ul class="nav-menu__list">
@@ -25,9 +24,11 @@
                 </ul>
                 <button class="nav-menu__btn">Connect Wallet</button>
             </nav>
-        </header>
-        <main>
-            <section class="hero-section">
+        </div>
+    </header>
+    <main>
+        <section class="hero-section">
+            <div class="hero-section__container container">
                 <div class="hero-section__blur-light-effect">
                     <div class="hero-section__blur-light-effect__ellipse"></div>
                     <div class="hero-section__blur-light-effect__rectangle1"></div>
@@ -85,15 +86,20 @@
                         </div>
                     </div>
                 </div>
-            </section>
-            <section class="clients-logo">
+            </div>
+        </section>
+        <section class="clients-logo">
+            <div class="clients-logo__container container">
                 <img class="clients-logo__coinbase" src="icons/coinbase.svg" alt="coinbase">
                 <img class="clients-logo__blockchain" src="icons/blockchain.svg" alt="blockchain">
                 <img class="clients-logo__binance" src="icons/binance.svg" alt="binance">
                 <img class="clients-logo__bitmex" src="icons/bitmex.svg" alt="bitmex">
-                <a class="clients-logo__scroll-button scroll-button" href="#"><img src="icons/arrow-down.svg" alt="arrow-down"></a>
-            </section>
-            <section class="live-auctions-section">
+                <a class="clients-logo__scroll-button scroll-button" href="#"><img src="icons/arrow-down.svg"
+                        alt="arrow-down"></a>
+            </div>
+        </section>
+        <section class="live-auctions-section">
+            <div class="live-auctions-section__container container">
                 <div class="live-auctions-section__blur-rectangle"></div>
                 <div class="live-auctions-section__title-second title-second-box">
                     <div class="title-second-box__ellipse"></div>
@@ -111,7 +117,8 @@
                                 <div class="card-bid__about-author-box">
                                     <img class="card-bid__about-img" src="img/cards-bid/profile-image.svg"
                                         alt="profile-image">
-                                    <h6 class="card-bid__about-name">Virtual Art <br><span class="card-bid__about-name-span">by @wzard</span></h6>
+                                    <h6 class="card-bid__about-name">Virtual Art <br><span
+                                            class="card-bid__about-name-span">by @wzard</span></h6>
                                 </div>
                                 <div class="card-bid__about-like-box">
                                     <img class="card-bid__about-like-heart" src="img/cards-bid/heard.svg" alt="heard">
@@ -136,7 +143,8 @@
                                 <div class="card-bid__about-author-box">
                                     <img class="card-bid__about-img" src="img/cards-bid/profile-image.svg"
                                         alt="profile-image">
-                                    <h6 class="card-bid__about-name">Virtual Art <br><span class="card-bid__about-name-span">by @wzard</span></h6>
+                                    <h6 class="card-bid__about-name">Virtual Art <br><span
+                                            class="card-bid__about-name-span">by @wzard</span></h6>
                                 </div>
                                 <div class="card-bid__about-like-box">
                                     <img class="card-bid__about-like-heart" src="img/cards-bid/heard.svg" alt="heard">
@@ -161,7 +169,8 @@
                                 <div class="card-bid__about-author-box">
                                     <img class="card-bid__about-img" src="img/cards-bid/profile-image.svg"
                                         alt="profile-image">
-                                    <h6 class="card-bid__about-name">Virtual Art <br><span class="card-bid__about-name-span">by @wzard</span></h6>
+                                    <h6 class="card-bid__about-name">Virtual Art <br><span
+                                            class="card-bid__about-name-span">by @wzard</span></h6>
                                 </div>
                                 <div class="card-bid__about-like-box">
                                     <img class="card-bid__about-like-heart" src="img/cards-bid/heard.svg" alt="heard">
@@ -178,30 +187,41 @@
                 </div>
                 <button class="live-auctions-section__btn-transparent btn-transparent">View All</button>
                 <div class="live-auctions-section__arrow-btns arrow-btns">
-                    <a class="arrow-btns__btn arrow-btns__btn_no-active" href="#"><img src="icons/arrow_left.svg" alt="arrow_left"></a>
+                    <a class="arrow-btns__btn arrow-btns__btn_no-active" href="#"><img src="icons/arrow_left.svg"
+                            alt="arrow_left"></a>
                     <a class="arrow-btns__btn" href="#"><img src="icons/arrow_right.svg" alt="arrow_right"></a>
                 </div>
-            </section>
-            <section class="hiw-section">
+            </div>
+        </section>
+        <section class="hiw-section">
+            <div class="hiw-section__container container">
                 <h2 class="hiw-section__title title-second">How it works</h2>
                 <div class="hiw-section__icons-box icons-hiw">
-                    <div class="icon-hiw"><img src="icons/icon-wallet.svg" alt="wallet"></div>
+                    <div class="icon-hiw__group">
+                        <div class="icon-hiw"><img src="icons/icon-wallet.svg" alt="wallet"></div>
+                        <p class="icons-desc__text">Set up your wallet</p>
+                    </div>
                     <img src="icons/icon-vector.svg" alt="vector">
-                    <div class="icon-hiw"><img src="icons/icon-collection.svg" alt="collection"></div>
+                    <div class="icon-hiw__group">
+                        <div class="icon-hiw"><img src="icons/icon-collection.svg" alt="collection"></div>
+                        <p class="icons-desc__text">Create your collection</p>
+                    </div>
                     <img src="icons/icon-vector.svg" alt="vector">
-                    <div class="icon-hiw"><img src="icons/icon-collections-add.svg" alt="collections-add"></div>
+                    <div class="icon-hiw__group">
+                        <div class="icon-hiw"><img src="icons/icon-collections-add.svg" alt="collections-add"></div>
+                        <p class="icons-desc__text">Add your NFTs</p>
+                    </div>
                     <img src="icons/icon-vector.svg" alt="vector">
-                    <div class="icon-hiw"><img src="icons/icon-park-outline.svg" alt="park-outline"></div>
-                </div>
-                <div class="hiw-section__icons-desc-box icons-desc">
-                    <p class="icons-desc__text">Set up your wallet</p>
-                    <p class="icons-desc__text">Create your collection</p>
-                    <p class="icons-desc__text">Add your NFTs</p>
-                    <p class="icons-desc__text">List them for sale</p>
+                    <div class="icon-hiw__group">
+                        <div class="icon-hiw"><img src="icons/icon-park-outline.svg" alt="park-outline"></div>
+                        <p class="icons-desc__text">List them for sale</p>
+                    </div>
                 </div>
                 <div class="hiw-section__blur"></div>
-            </section>
-            <section class="pop-coll-section">
+            </div>
+        </section>
+        <section class="pop-coll-section">
+            <div class="pop-coll-section__container container">
                 <div class="pop-coll-section__title-second title-second-box">
                     <div class="title-second-box__ellipse title-second-box__ellipse_red"></div>
                     <h2 class="title-second-box__text title-second">Popular Collections</h2>
@@ -242,11 +262,14 @@
                 <div class="pop-coll-section__blur1"></div>
                 <div class="pop-coll-section__blur2"></div>
                 <div class="pop-coll-section__arrow-btns arrow-btns">
-                    <a class="arrow-btns__btn arrow-btns__btn_no-active" href="#"><img src="icons/arrow_left.svg" alt="arrow_left"></a>
+                    <a class="arrow-btns__btn arrow-btns__btn_no-active" href="#"><img src="icons/arrow_left.svg"
+                            alt="arrow_left"></a>
                     <a class="arrow-btns__btn" href="#"><img src="icons/arrow_right.svg" alt="arrow_right"></a>
                 </div>
-            </section>
-            <section class="explore-section">
+            </div>
+        </section>
+        <section class="explore-section">
+            <div class="explore-section__container container">
                 <div class="explore-section__title-second title-second-box">
                     <div class="title-second-box__ellipse"></div>
                     <h2 class="title-second-box__text title-second">Explore By Categories</h2>
@@ -255,9 +278,9 @@
 
                 </div>
                 <button class="explore-section__btn-transparent btn-transparent">View All</button>
-            </section>
-        </main>
-    </div>
+            </div>
+        </section>
+    </main>
 
 </body>
 
