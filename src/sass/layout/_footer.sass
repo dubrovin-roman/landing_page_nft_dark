@@ -1,3 +1,38 @@
 .footer
     background: #251928
     &__container
+        display: grid
+        grid-template-columns: 1fr 1fr
+        padding: 11rem 0
+        position: relative
+    &__left
+        display: flex
+        flex-direction: row
+    &__logo
+        margin-right: 5rem
+        img
+            width: 19.4rem
+            height: 19.4rem
+    &__text
+        margin-bottom: 6rem
+    &__icons-box
+        margin-bottom: 6rem
+    &__icon
+        margin-right: 3rem
+        &:last-child
+            margin-right: 0rem
+        img
+            width: 4.5rem
+            height: 4.5rem
+    &__right
+        display: grid
+        grid-template-columns: 1fr 1fr
+        justify-items: center
+    &__blur
+        position: absolute
+        top: 0
+        left: -10rem
+        width: 20rem
+        height: 17rem
+        background: #D53D5C
+        filter: blur(27.5rem)
