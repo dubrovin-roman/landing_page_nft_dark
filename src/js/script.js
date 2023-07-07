@@ -2,6 +2,10 @@
 
 const page = {
   sections: document.querySelectorAll(".section"),
+  header: {
+    container: document.querySelector(".header__container"),
+  },
+  heroSection: document.querySelector(".hero-section"),
   clientsLogoSec: {
     scrollBtn: document.querySelector(".clients-logo__scroll-button"),
   },
@@ -18,7 +22,7 @@ page.clientsLogoSec.scrollBtn.addEventListener("click", (ev) => {
 });
 
 // всплытие секций при прокрутке
-const sectionObserver = new IntersectionObserver(
+const sectionsObserver = new IntersectionObserver(
   (entries, observer) => {
     if (entries[0].isIntersecting) {
       entries[0].target.classList.remove("section-hidden");
@@ -32,5 +36,23 @@ const sectionObserver = new IntersectionObserver(
 
 page.sections.forEach((elem) => {
   elem.classList.add("section-hidden");
-  sectionObserver.observe(elem);
+  sectionsObserver.observe(elem);
 });
+
+// появление меню при прокрутке
+const navObserver = new IntersectionObserver(
+  (entries, observer) => {
+    if (!entries[0].isIntersecting) {
+      page.header.container.classList.add("sticky");
+    } else {
+      page.header.container.classList.remove("sticky");
+    }
+  },
+  {
+    root: null,
+    threshold: 0,
+    rootMargin: "-70px",
+  }
+);
+
+navObserver.observe(page.heroSection);
