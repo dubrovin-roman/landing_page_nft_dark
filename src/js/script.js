@@ -18,7 +18,7 @@ const page = {
 // прокрутка при нажатии scrollBtn
 page.clientsLogoSec.scrollBtn.addEventListener("click", (ev) => {
   ev.preventDefault();
-  page.liveAuctionsSec.titleSecond.scrollIntoView({ behavior: "smooth" });
+  page.liveAuctionsSection.scrollIntoView({ behavior: "smooth" });
 });
 
 // всплытие секций при прокрутке
